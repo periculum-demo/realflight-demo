@@ -67,7 +67,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
     <title>Cesium Demo</title>
-    <script type="text/javascript" src="../Sandcastle-header.js"></script>
+   <!-- <script type="text/javascript" src="../Sandcastle-header.js"></script>
     
     
 <script type="text/javascript" src="Cesium/Build/Cesium/Cesium.js"></script><script type="text/javascript">
@@ -81,10 +81,15 @@
 <body bis_status="ok" data-sandcastle-loaded="yes" class=" " data-sandcastle-bucket="bucket-requirejs.html">
 <script type="text/javascript" src="../Sandcastle-client.js"></script>
 
+-->
+
 
 <div><style>
-    @import url(../templates/bucket.css);
-       
+   
+      @import url(Cesium/Build/Cesium/Widgets/widgets.css);
+      html, body, #cesiumContainer {
+          width: 100%; height: 100%; margin: 0; padding: 0; overflow: hidden;
+      }  
 
     * {
         -webkit-box-sizing: border-box;
