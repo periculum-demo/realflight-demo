@@ -542,8 +542,8 @@ view2.canvas.addEventListener('click', function(e){
     var cartesian = view2.camera.pickEllipsoid(mousePosition, ellipsoid);
     if (cartesian) {
         var cartographic = ellipsoid.cartesianToCartographic(cartesian);
-        var longitudeString = Cesium.Math.toDegrees(cartographic.longitude).toFixed(4);
-        var latitudeString = Cesium.Math.toDegrees(cartographic.latitude).toFixed(4);
+        var longitudeString = Cesium.Math.toDegrees(cartographic.longitude).toFixed(6);
+        var latitudeString = Cesium.Math.toDegrees(cartographic.latitude).toFixed(6);
  
         console.log(longitudeString + ', ' + latitudeString);
     } else {
@@ -585,7 +585,8 @@ function batteryFailure(){
 
     
     //-122.8751, 39.5545
-    let position = Cesium.Cartesian3.fromDegrees(-76.7920, 43.9532, 100);
+    -76.8748, 43.9384
+    let position = Cesium.Cartesian3.fromDegrees(-76.8748, 43.9384, 100);
     let time = Cesium.JulianDate.fromIso8601('2012-08-04T10:02:00.00Z');
     p.position.addSample(time, position);
 
